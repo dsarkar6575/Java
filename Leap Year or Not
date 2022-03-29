@@ -1,0 +1,25 @@
+package com.gcettb;
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a Year:");
+       int a= sc.nextInt();
+       if(a%4==0)
+       {
+           System.out.println("This is leap Year.");
+       }
+       else if(a%400==0)
+       {
+           System.out.println("This is leap Year.");
+       }
+       else if(a%100==0)
+       {
+           System.out.println("This is not a leap Year.");
+       }
+       else{
+           System.out.println("This is not a leap year.");
+       }
+    }
+}
