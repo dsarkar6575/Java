@@ -1,0 +1,14 @@
+package com.gcettb;
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a character:");
+       Character a= sc.next().charAt(0);
+       int c=(int) a;
+        System.out.println("The Ascii value is: "+c);
+
+
+    }
+}
