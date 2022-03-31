@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Method= A block of code that perform a specific task is called  method
-       //        String name="Bockchoda";
+       //        String name="Dipankar";
 //             int age=21;
 //        hello(name,age);
         int x=3;
