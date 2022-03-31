@@ -1,0 +1,23 @@
+package com.gcettb;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Method= A block of code that perform a specific task is called  method
+       //        String name="Bockchoda";
+//             int age=21;
+//        hello(name,age);
+        int x=3;
+        int y=4;
+        int z= add(x,y);
+        System.out.println(z);
+   }
+//    static void hello(String name,int age){
+//        System.out.println("Hello Bro "+name);
+//        System.out.println("You are "+age);
+        static int add(int x,int y)
+        {
+            int k=x+y;
+            return k;
+        }
+    }
