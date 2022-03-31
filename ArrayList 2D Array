@@ -21,6 +21,6 @@ public class Main {
         groceryList.add(bakeryList);
         groceryList.add(produce);
         groceryList.add(drinks);
-        System.out.println(groceryList.get(2));
+        System.out.println(groceryList.get(2).get(1));              //groceryList is index 2 then index 1
     }
 }
