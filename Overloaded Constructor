@@ -1,0 +1,74 @@
+package com.gcettb;
+class pizza{
+    String bread;
+    String sauce;
+    String cheese;
+    String topping;
+    pizza(String bread,String sauce,String cheese,String topping)
+    {
+         this.bread=bread;
+         this.sauce=sauce;
+         this.cheese=cheese;
+         this.topping=topping;
+    }
+    pizza(String bread,String sauce,String cheese)
+    {
+        this.bread=bread;
+        this.sauce=sauce;
+        this.cheese=cheese;
+//        this.topping=topping;
+    }
+    pizza(String bread,String sauce)
+    {
+        this.bread=bread;
+        this.sauce=sauce;
+//        this.cheese=cheese;
+//        this.topping=topping;
+    }
+    pizza(String bread)
+    {
+        this.bread=bread;
+//        this.sauce=sauce;
+//        this.cheese=cheese;
+//        this.topping=topping;
+    }
+    pizza()
+    {
+//        this.bread=bread;
+//        this.sauce=sauce;
+//        this.cheese=cheese;
+//        this.topping=topping;
+        System.out.println("This is default constructor");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+              //Overloaded constructors = multiple constructors within a class with the same name,but have different parameters.
+              //                           name+parameters =signature
+           pizza obj=new pizza("thicc crust","tomato","mozzerlla","pepperoni");
+        System.out.println("Here are the ingredients of your pizza: ");
+        System.out.println(obj.bread);
+        System.out.println(obj.sauce);
+        System.out.println(obj.cheese);
+        System.out.println(obj.topping);
+        pizza obj1=new pizza("thicc crust","tomato","mozzerlla");
+        System.out.println(obj1.bread);
+        System.out.println(obj1.sauce);
+        System.out.println(obj1.cheese);
+        pizza obj2=new pizza("thicc crust","tomato");
+        System.out.println(obj2.bread);
+        System.out.println(obj2.sauce);
+
+        pizza obj3=new pizza("thicc crust");
+        System.out.println(obj3.bread);
+
+        pizza obj4=new pizza();
+        System.out.println(obj4.bread);
+        System.out.println();
+
+
+        }
+    }
