@@ -1,0 +1,30 @@
+package com.gcettb;
+
+import java.util.Random;
+
+class  DiceRoller{
+    Random rand;                    //That is global
+    int number=0;                   //global because it accesses all of the classes
+    DiceRoller()
+    {
+         rand=new Random();       //That is local
+//        int number = 0;                   //local
+        roll();
+    }
+    void roll()
+    {
+        number=  rand.nextInt(6)+1;
+        System.out.println(number);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+           //local = declared inside a method visible only to that method
+        //global=   declared outside a method, but within a class visible to all parts of a class
+            DiceRoller obj=new DiceRoller();
+            obj.roll();
+
+        }
+    }
