@@ -1,0 +1,34 @@
+package com.gcettb;
+class car{
+    String make = "BMW";
+    String model= "Landrover";
+    int year=2020;
+    String color="blue";
+    Double price = 50000.00;
+    void drive()
+    {
+        System.out.println("You drive the car");
+    }
+       void brake()
+       {
+           System.out.println("You are brake the car.");
+       }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+  //Object = an instance of a class that may contain attributes and methods
+    //example:  (phone,desk,computer, coffee cup)
+         car obj=new car();
+        System.out.println(obj.make);
+        System.out.println(obj.model);
+        System.out.println(obj.color);
+        System.out.println(obj.price);
+        System.out.println(obj.year);
+         obj.drive();
+         obj.brake();
+
+
+        }
+    }
