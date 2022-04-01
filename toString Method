@@ -1,0 +1,27 @@
+package com.gcettb;
+class  car{
+    String make= "Ford";
+    String model="Mustang";
+    String color="Blue";
+    int year = 2020;
+    public String toString()
+    {
+        String myString=make +"\n"+ model +"\n"+ color +"\n" + year;
+        return myString;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        //toString() = special method that all objects inherit, that returns a string that "textually represents" an object.
+        //             can be used both implicitly and explicitly
+            car obj=new car();
+//        System.out.println(obj.make);
+//        System.out.println(obj.model);
+//        System.out.println(obj.color);
+//        System.out.println(obj.year);
+        //System.out.println(obj.toString());           //this is the car obj of address print
+        System.out.println(obj);            //toString() method is overriding
+        }
+    }
