@@ -1,0 +1,29 @@
+package com.gcettb;
+class Garage{
+   void  park(Car car)
+   {
+       System.out.println("The "+car.name+" is parked in the garage.");
+   }
+}
+class Car{
+ String name;
+ Car(String name)
+ {
+     this.name=name;
+ }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+           Garage gar=new Garage();
+           Car obj=new Car("TATA");
+        Car obj1=new Car("TATA1");
+        Car obj2=new Car("TATA2");
+
+            gar.park(obj);
+            gar.park(obj1);
+            gar.park(obj2);
+
+        }
+    }
