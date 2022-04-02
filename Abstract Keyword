@@ -1,0 +1,22 @@
+package com.gcettb;
+public abstract class vehicle1{
+    abstract void go();
+}
+
+class car extends vehicle1{
+@Override
+    void go()
+{
+    System.out.println("The driver is driving the car");
+}
+}
+public class Main {
+
+    public static void main(String[] args) {
+        //Abstract = abstract classes cannot be instantiated ,but they can have a subclass abstract methods are declared without an implementation.
+       // vehicle obj=new vehicle();
+        car obj1=new car();
+        obj1.go();
+
+        }
+    }
