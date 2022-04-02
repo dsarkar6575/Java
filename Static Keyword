@@ -1,0 +1,29 @@
+package com.gcettb;
+ class Friend{
+     String name;
+     static  int numberoffriend;
+     Friend(String name)
+
+     {
+         this.name=name;
+         numberoffriend++;
+     }
+     static void displayFriend()
+     {
+         System.out.println("This has "+ numberoffriend+" Friends. ");
+     }
+ }
+
+public class Main {
+
+    public static void main(String[] args) {
+       //Static =modifier. A single copy of a variable/method is created and shared.
+        // The class "owns" the static member
+        Friend fri= new Friend("Hi");
+       Friend fri1=new Friend("Hello");
+        Friend fri2=new Friend("Hooo");
+       Friend.displayFriend();
+
+
+        }
+    }
