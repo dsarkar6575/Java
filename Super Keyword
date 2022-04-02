@@ -1,0 +1,37 @@
+package com.gcettb;
+class  parson{
+    String name;
+    int age;
+    parson(String name,int age){
+     this.name=name;
+     this.age=age;
+    }
+    public String toString(){
+        return this.name+"\n"+this.age+"\n";
+    }
+}
+ class  Hero extends parson{
+    String power;
+    Hero(String name,int age, String power)
+    {
+        super(name, age);
+         this.name=name;
+         this.age=age;
+         this.power=power;
+    }
+    public String toString(){
+        return super.toString()+this.power;
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+       //Super =Keyword refers to the superclass (parent) of an object very similar to the "this" keyword.
+Hero hero=new Hero("Iron man",25,"Money and Iron shout.");
+//        System.out.println(hero.name);
+//        System.out.println(hero.age);
+//        System.out.println(hero.power);
+        System.out.println(hero.toString());
+
+        }
+    }
