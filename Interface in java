@@ -1,0 +1,45 @@
+package com.gcettb;
+class  Rabbit implements prey{
+
+    public void  flee(){
+    System.out.println("*The rabbit is fleeing*");
+}
+}
+class Hawk implements predator {
+    public void hunt()
+    {
+        System.out.println("*The hock is hunting");
+    }
+
+}
+class Fish implements prey,predator{
+  public void hunt()
+  {
+      System.out.println("The fish is hunting smaller fish");
+  }
+  public void flee()
+  {
+      System.out.println("This fish is fleeing from a larger fish");
+  }
+}
+interface prey{
+ void flee();
+}
+interface  predator{
+void hunt();
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+   //Interface = a template that can be applied to a class.
+        //        similar to inheritance, but specifies what a class has/must do.
+        //        classes can apply more than one interface, inheritance is limited to 1 super class
+//       Fish fish=new Fish();
+//        fish.hunt();
+//        fish.flee();
+        Hawk obj=new Hawk();
+        obj.hunt();
+
+        }
+    }
