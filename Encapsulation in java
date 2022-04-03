@@ -1,0 +1,57 @@
+package com.gcettb;
+class  Car{
+ private String make;
+ private  String  model;
+ private int year;
+public void setMake(String make)
+{
+    this.make=make;
+}
+public  void setModel(String model)
+{
+    this.model=model;
+}
+public void  setYear(int year)
+{
+    this.year=year;
+}
+ public String getMake()
+ {
+     return make;
+ }
+ public String getModel()
+ {
+     return model;
+ }
+ public int getYear()
+ {
+     return year;
+ }
+ public String ok(String make)
+ {
+     return this.make;
+ }
+ public String ok1(String model)
+ {
+     return this.model;
+ }
+ public int ok2(int year)
+ {
+     return this.year;
+ }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+           //Encapsulation = attributes of a class will be hidden or private, can be accessed only through methods(getters & setters)
+           // you should make attributes private if you don't have a reason to make then private/protected.
+         Car car=new Car();
+         car.setMake("Bmw company");
+          car.setModel("N11132");
+          car.setYear(2022);
+         System.out.println(car.getMake());
+        System.out.println(car.getModel());
+        System.out.println(car.getYear());
+        }
+    }
