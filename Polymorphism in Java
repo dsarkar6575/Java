@@ -1,0 +1,48 @@
+  package com.gcettb;
+
+  abstract class Vehicle{
+
+   abstract void go();
+  }
+class Car extends Vehicle{
+      @Override
+ void go()
+ {
+     System.out.println("*The car Begin to go.*");
+ }
+}
+class Bicycle extends Vehicle{
+      @Override
+void go(){
+    System.out.println("*The Bicycle Begin to go.*");
+}
+}
+class Boat extends Vehicle{
+      @Override
+      void go()
+      {
+          System.out.println("*The Boat Begin to go.*");
+      }
+
+}
+
+  public class Main {
+
+    public static void main(String[] args) {
+        //Polymorphism = greek word poly-"many", morph-"form
+        //               The ability of an object to indentify as more than one type
+        Car car=new Car();
+        Bicycle bicycle=new Bicycle();
+        Boat boat=new Boat();
+       Vehicle[] recers={car,bicycle,boat};
+//          car.go();
+//          bicycle.go();
+//          boat.go();
+        for(Vehicle x:recers)
+        {
+            x.go();
+        }
+
+
+        }
+    }
