@@ -8,7 +8,7 @@
     public static void main(String[] args) {
 try {
     FileWriter writer= new FileWriter("poem.txt");
-    writer.write("Roses are red\n Violets are blue\n Booty booty booty booty\n Rockin' everywhere!");
+    writer.write("Roses are red\n Violets are blue\n Booty booty booty booty\n Rocking' everywhere!");
     writer.append("\n(A poem by Dipankar)");
     writer.close();
 }
